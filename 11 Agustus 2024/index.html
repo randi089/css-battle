@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        background-color: #fade8b;
+      }
+
+      .div1 {
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        background: #d86f45;
+        position: relative;
+      }
+
+      .div1::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #d86f45;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        border-radius: 50%;
+        border: 20px solid #fade8b;
+      }
+      .div1::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #d86f45;
+        position: absolute;
+        bottom: -50px;
+        right: -50px;
+        border-radius: 50%;
+        border: 20px solid #fade8b;
+      }
+
+      .div1 div {
+        width: 60px;
+        height: 60px;
+        background-color: #fade8b;
+        position: absolute;
+        top: -50px;
+        right: -50px;
+        border-radius: 50%;
+        border: 20px solid #fade8b;
+      }
+
+      .div1 div::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #fade8b;
+        position: absolute;
+        bottom: -120px;
+        left: -120px;
+        border-radius: 50%;
+        border: 20px solid #fade8b;
+      }
+    </style>
+    <title>11 Agustus 2024</title>
+  </head>
+  <body>
+    <div class="div1"><div></div></div>
+  </body>
+</html>
