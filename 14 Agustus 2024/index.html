@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        background-color: #151109;
+      }
+      .div {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        background: #b53733;
+        border-radius: 50%;
+        position: relative;
+      }
+      .div::before {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-color: #151109;
+        position: absolute;
+        bottom: -122px;
+        left: -31px;
+        rotate: 45deg;
+      }
+
+      .div::after {
+        content: "";
+        width: 200px;
+        height: 200px;
+        background-color: #151109;
+        position: absolute;
+        bottom: -150px;
+        right: -43px;
+        rotate: 45deg;
+      }
+
+      .div > div {
+        width: 20px;
+        height: 20px;
+        background-color: #151109;
+        position: absolute;
+        right: 45px;
+        top: 30px;
+        border-radius: 100%;
+      }
+    </style>
+    <title>14 Agustus 2024</title>
+  </head>
+  <body>
+    <div class="div"><div></div></div>
+  </body>
+</html>
