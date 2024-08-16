@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #eadcdc;
+        display: flex;
+      }
+
+      .div {
+        width: 190px;
+        height: 190px;
+        margin: auto;
+        background: #eadcdc;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .div::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: #151109;
+        border-radius: 50%;
+        left: -10px;
+        top: -5px;
+        z-index: -1;
+      }
+
+      .div::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: #151109;
+        border-radius: 50%;
+        right: -5px;
+        top: 3px;
+        z-index: -1;
+      }
+
+      .div > div:first-child {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        background-color: #151109;
+        border-radius: 80% 56%;
+        top: 55px;
+        left: 22px;
+      }
+
+      .div > div:first-child::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        background-color: #eadcdc;
+        border-radius: 50%;
+        bottom: 12px;
+        right: 7px;
+      }
+
+      .div > div:nth-child(2) {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: #151109;
+        border-radius: 56% 80%;
+        top: 55px;
+        right: 22px;
+      }
+
+      .div > div:nth-child(2)::after {
+        content: "";
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        background-color: #eadcdc;
+        border-radius: 50%;
+        bottom: 12px;
+        right: 7px;
+      }
+
+      .div > div:last-child {
+        width: 40px;
+        height: 22px;
+        position: absolute;
+        background-color: #151109;
+        border-radius: 0 0 30px 30px;
+        bottom: 40px;
+        left: 75px;
+      }
+    </style>
+    <title>16 Agustus 2024</title>
+  </head>
+  <body>
+    <div class="div">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
