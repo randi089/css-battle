@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+      }
+      div {
+        width: 200px;
+        height: 100px;
+        margin: auto;
+        background: #ffffff;
+        border: 50px solid #000000;
+        position: relative;
+      }
+      div::after {
+        content: "";
+        width: 100px;
+        height: 200px;
+        background-color: #ffffff;
+        position: absolute;
+        top: -50px;
+        left: 50px;
+      }
+    </style>
+    <title>17 Agustus 2024</title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
