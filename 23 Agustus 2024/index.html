@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        background-color: #8983ae;
+      }
+      .div {
+        width: 160px;
+        height: 160px;
+        margin: auto;
+        background: #d3b882;
+        border-radius: 50%;
+        position: relative;
+      }
+
+      .div::before {
+        content: "";
+        width: 20px;
+        height: 165px;
+        background-color: #8983ae;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-55%) rotate(45deg);
+      }
+
+      .div::after {
+        content: "";
+        width: 20px;
+        height: 170px;
+        background-color: #8983ae;
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-40%) rotate(-45deg);
+      }
+
+      .div > div:first-child {
+        width: 60px;
+        height: 60px;
+        background-color: #8983ae;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+
+      .div > div:first-child::before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #8983ae;
+        position: absolute;
+        top: 50%;
+        left: -135%;
+        transform: translateY(82%);
+        border-radius: 50%;
+      }
+
+      .div > div:first-child::after {
+        content: "";
+        width: 60px;
+        height: 60px;
+        background-color: #8983ae;
+        position: absolute;
+        top: 50%;
+        right: -131%;
+        transform: translateY(82%);
+        border-radius: 50%;
+      }
+
+      .div > div:last-child {
+        width: 60px;
+        height: 60px;
+        background-color: #8983ae;
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+      }
+    </style>
+    <title>23 Agustus 2024</title>
+  </head>
+  <body>
+    <div class="div">
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
