@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        display: flex;
+        background-color: #b53733;
+      }
+      div {
+        width: 160px;
+        height: 100px;
+        margin: auto;
+        background: #000000;
+        border-radius: 50px;
+        position: relative;
+      }
+      div::before {
+        content: "";
+        width: 100px;
+        height: 100px;
+        background-color: #b53733;
+        position: absolute;
+        border-radius: 50%;
+        top: -30px;
+        left: 30px;
+      }
+      div::after {
+        content: "";
+        width: 100px;
+        height: 100px;
+        background-color: #ffffff;
+        position: absolute;
+        border-radius: 50%;
+        bottom: -30px;
+        left: 30px;
+      }
+    </style>
+    <title>26 Agustus 2024</title>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
